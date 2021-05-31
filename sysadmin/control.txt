@@ -1,0 +1,35 @@
+-------------------------------------------
+CONNECT TO WIFI NETWORK
+-------------------------------------------
+
+iwctl :
+
+      list available wirless adapters
+
+      iwctl device list
+
+      scan available networks
+
+      iwctl station [device] scan
+
+      list available networks
+
+      iwctl device get-networks
+
+
+      connect to protected network
+      ----------------------------
+
+      iwctl --passphrase [ pass ] station [ device ] connect [ SSID ]
+
+
+
+
+----------------------------------------------
+BRIGHTNESS CONTROL
+----------------------------------------------
+show max brightness
+
+cat /sys/class/backlight/intel-backlight/max_brigtness
+
+echo 6800  > /sys/class/backlight/intel-backlight/brightness
